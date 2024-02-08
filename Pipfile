@@ -15,6 +15,7 @@ mkdocs-multirepo-plugin = "*"
 slugify = "*"
 unicode = "*"
 python-slugify = "*"
+mkdocs-git-authors-plugin = "*"
 
 [dev-packages]
 

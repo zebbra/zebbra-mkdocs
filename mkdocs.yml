@@ -8,6 +8,7 @@ nav:
 # --8<-- [start:theme]
 theme:
   name: material
+  custom_dir: docs/override
   features:
     - content.code.annotate
     - content.code.copy
@@ -79,19 +80,6 @@ plugins:
   # Allows to add a whole directory in the navigation instead of just files
   # Sub-nav items are automatically created if the provided dir contains subdirectories
   - include_dir_to_nav
-  # Include content of other files in markdown
-  - include-markdown:
-      encoding: ascii
-      preserve_includer_indent: false
-      dedent: false
-      trailing_newlines: true
-      comments: true
-      rewrite_relative_urls: true # true is default
-      heading_offset: 0
-      opening_tag: "{%"
-      closing_tag: "%}"
-      start: <!--start-->
-      end: <!--end-->
   - multirepo:
       # (optional) tells multirepo to cleanup the temporary directory after site is built.
       cleanup: false
@@ -99,6 +87,7 @@ plugins:
       # When using this with a nav section in an imported repo you must keep the
       # docs directory in the path (e.g., docs/path/to/file.md).
       keep_docs_dir: false
+  - git-authors
 # --8<-- [end:plugins]
 
 # --8<-- [start:repo]
