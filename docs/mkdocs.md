@@ -1,9 +1,15 @@
-site_name: Zebbra Docs
+# MkDocs Configuration File
 
-nav:
-  - Start: index.md
-  - MkDocs Configuration: mkdocs.md
+An example can be found at the [mkdocs-material demo](https://github.com/squidfunk/mkdocs-material/blob/master/mkdocs.yml)
 
+
+
+Plugins:
+
+
+MkDocs material theme is the most popular and rich on features
+
+```yaml
 theme:
   name: material
   features:
@@ -22,7 +28,7 @@ theme:
     - search.suggest
     - search.highlight
     - content.action.edit
-
+    
   # Dark and light mode, defaults to system theme
   palette:
     - media: "(prefers-color-scheme)"
@@ -43,8 +49,11 @@ theme:
       toggle:
         icon: material/toggle-switch-off
         name: Switch to system preference
+```
 
+Markdown extensions from material theme
 
+```yaml
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -59,14 +68,18 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.inlinehilite
   - pymdownx.snippets
+```
 
+Used plugins
+
+```yaml
 plugins:
   # Enables search
   - search
   # Enables export as PDF
-  # - pdf-export
+  - pdf-export
   # Allows to add a whole directory in the navigation instead of just files
-  # Sub-nav items are automatically created if the provided dir contains subdirectories
+  # Sub-nav items are automatically created if the provided dir contains subdirectories 
   - include_dir_to_nav
   # Include content of other files in markdown
   - include-markdown:
@@ -81,14 +94,29 @@ plugins:
       closing_tag: "%}"
       start: <!--start-->
       end: <!--end-->
+```
 
-repo_url: https://github.com/zebbra/zebbra-mkdocs
-edit_uri: edit/main
 
+Allow to edit pages
+
+```yaml
+repo_url: https://github.com/zebbra/neops-docs
+edit_uri: edit/master
+```
+
+
+Social Media links in the footer
+
+```yaml
 extra:
   social:
     - icon: fontawesome/brands/mastodon
       link: https://neops.io
       name: Neops
+```
 
+Add a copyright by Zebbra
+
+```yaml
 copyright: Copyright &copy; Zebbra AG
+```
