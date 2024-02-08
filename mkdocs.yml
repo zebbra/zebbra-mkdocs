@@ -3,6 +3,7 @@ site_name: Zebbra Docs
 nav:
   - Start: index.md
   - MkDocs Configuration: mkdocs.md
+  - Dummy Project: '!import https://github.com/zebbra/zebbra-mkdocs-dummyproject?branch=main&extra_imports=["src/*", "dummyproject-src"]'
 
 theme:
   name: material
@@ -60,7 +61,10 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets:
       check_paths: true
-
+      # https://github.com/mkdocs/mkdocs/issues/2154
+      base_path:
+        - "."
+        - "temp_dir/dummy-project"
 
 plugins:
   # Enables search
@@ -83,6 +87,13 @@ plugins:
       closing_tag: "%}"
       start: <!--start-->
       end: <!--end-->
+  - multirepo:
+      # (optional) tells multirepo to cleanup the temporary directory after site is built.
+      cleanup: false
+      # if set the docs directory will not be removed when importing docs.
+      # When using this with a nav section in an imported repo you must keep the
+      # docs directory in the path (e.g., docs/path/to/file.md).
+      keep_docs_dir: false
 
 repo_url: https://github.com/zebbra/zebbra-mkdocs
 edit_uri: edit/main/docs

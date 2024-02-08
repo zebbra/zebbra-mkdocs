@@ -11,6 +11,10 @@ pip = "*"
 install = "*"
 mkdocs-pdf-export-plugin = "*"
 mkdocs-include-dir-to-nav = "*"
+mkdocs-multirepo-plugin = "*"
+slugify = "*"
+unicode = "*"
+python-slugify = "*"
 
 [dev-packages]
 
