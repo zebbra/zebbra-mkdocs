@@ -5,6 +5,7 @@ nav:
   - MkDocs Configuration: mkdocs.md
   - Dummy Project: '!import https://github.com/zebbra/zebbra-mkdocs-dummyproject?branch=main&extra_imports=["src/*", "dummyproject-src"]'
 
+# --8<-- [start:theme]
 theme:
   name: material
   features:
@@ -32,20 +33,21 @@ theme:
         name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: indigo
+      primary: teal
+      accent: deep orange
       toggle:
         icon: material/toggle-switch
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
-      accent: indigo
+      accent: deep orange
       toggle:
         icon: material/toggle-switch-off
         name: Switch to system preference
+# --8<-- [end:theme]
 
-
+# --8<-- [start:markdown_extensions]
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -63,9 +65,12 @@ markdown_extensions:
       check_paths: true
       # https://github.com/mkdocs/mkdocs/issues/2154
       base_path:
+        - "mkdocs.yml"
         - "."
         - "temp_dir/dummy-project"
+# --8<-- [end:markdown_extensions]
 
+# --8<-- [start:plugins]
 plugins:
   # Enables search
   - search
@@ -94,14 +99,21 @@ plugins:
       # When using this with a nav section in an imported repo you must keep the
       # docs directory in the path (e.g., docs/path/to/file.md).
       keep_docs_dir: false
+# --8<-- [end:plugins]
 
+# --8<-- [start:repo]
 repo_url: https://github.com/zebbra/zebbra-mkdocs
 edit_uri: edit/main/docs
+# --8<-- [end:repo]
 
+# --8<-- [start:social]
 extra:
   social:
     - icon: fontawesome/brands/mastodon
       link: https://neops.io
       name: Neops
+# --8<-- [end:social]
 
+# --8<-- [start:copyright]
 copyright: Copyright &copy; Zebbra AG
+# --8<-- [end:copyright]
