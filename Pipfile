@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+mkdocs = "*"
+mkdocs-material = "*"
+mkdocs-include-markdown-plugin = "*"
+pip = "*"
+install = "*"
+mkdocs-pdf-export-plugin = "*"
+mkdocs-include-dir-to-nav = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
