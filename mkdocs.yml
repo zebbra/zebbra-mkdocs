@@ -58,7 +58,9 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.inlinehilite
-  - pymdownx.snippets
+  - pymdownx.snippets:
+      check_paths: true
+
 
 plugins:
   # Enables search
@@ -83,7 +85,7 @@ plugins:
       end: <!--end-->
 
 repo_url: https://github.com/zebbra/zebbra-mkdocs
-edit_uri: edit/main
+edit_uri: edit/main/docs
 
 extra:
   social:

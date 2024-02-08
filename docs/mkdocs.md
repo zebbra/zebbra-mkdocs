@@ -1,5 +1,7 @@
 # MkDocs Configuration File
 
+
+Spec: [mkdocs.yml](https://www.mkdocs.org/user-guide/configuration/)
 An example can be found at the [mkdocs-material demo](https://github.com/squidfunk/mkdocs-material/blob/master/mkdocs.yml)
 
 
@@ -66,7 +68,9 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  # https://facelessuser.github.io/pymdown-extensions/extensions/inlinehilite/
   - pymdownx.inlinehilite
+  # https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
   - pymdownx.snippets
 ```
 
