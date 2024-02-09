@@ -16,6 +16,7 @@ slugify = "*"
 unicode = "*"
 python-slugify = "*"
 mkdocs-git-authors-plugin = "*"
+mkdocs-monorepo-plugin = "*"
 
 [dev-packages]
 

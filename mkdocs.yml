@@ -3,7 +3,7 @@ site_name: Zebbra Docs
 nav:
   - Start: index.md
   - MkDocs Configuration: mkdocs.md
-  - Dummy Project: '!import https://github.com/zebbra/zebbra-mkdocs-dummyproject?branch=main&extra_imports=["src/*", "dummyproject-src"]'
+  - Dummy Project: '!include ./submodules/zebbra-mkdocs-dummyproject/mkdocs.yml'
 
 # --8<-- [start:theme]
 theme:
@@ -68,7 +68,8 @@ markdown_extensions:
       base_path:
         - "mkdocs.yml"
         - "."
-        - "temp_dir/dummy-project"
+        - "submodules/zebbra-mkdocs-dummyproject"
+        - "submodules/zebbra-mkdocs-dummyproject/docs"
 # --8<-- [end:markdown_extensions]
 
 # --8<-- [start:plugins]
@@ -80,13 +81,7 @@ plugins:
   # Allows to add a whole directory in the navigation instead of just files
   # Sub-nav items are automatically created if the provided dir contains subdirectories
   - include_dir_to_nav
-  - multirepo:
-      # (optional) tells multirepo to cleanup the temporary directory after site is built.
-      cleanup: false
-      # if set the docs directory will not be removed when importing docs.
-      # When using this with a nav section in an imported repo you must keep the
-      # docs directory in the path (e.g., docs/path/to/file.md).
-      keep_docs_dir: false
+  - monorepo
   - git-authors
 # --8<-- [end:plugins]
 

@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "c09e35b85fc35888769753819689ad89f0cc3d62798af64baa1fbe41387639c9"
+            "sha256": "a43738f481b84c6ba30d1c82c8dc33158a2a9bd4a6fb8784aa746adb518a3f01"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -547,6 +547,15 @@
             "markers": "python_version >= '3.8'",
             "version": "==1.3.1"
         },
+        "mkdocs-monorepo-plugin": {
+            "hashes": [
+                "sha256:7bbfd9756a7fdecf64d6105dad96cce7e7bb5f0d6cfc2bfda31a1919c77cc3b9",
+                "sha256:ccc566e166aac5ae7fade498c15c4a337a4892d238629b51aba8ef3fc7099034"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3'",
+            "version": "==1.1.0"
+        },
         "mkdocs-multirepo-plugin": {
             "hashes": [
                 "sha256:1034fc2aadafedb9d789eb2fb9181b5121c297f7e123beebd51c19e1e6ee94e5",
@@ -734,12 +743,12 @@
         },
         "python-slugify": {
             "hashes": [
-                "sha256:c71189c161e8c671f1b141034d9a56308a8a5978cd13d40446c879569212fdd1",
-                "sha256:e04cba5f1c562502a1175c84a8bc23890c54cdaf23fccaaf0bf78511508cabed"
+                "sha256:276540b79961052b66b7d116620b36518847f52d5fd9e3a70164fc8c50faa6b8",
+                "sha256:59202371d1d05b54a9e7720c5e038f928f45daaffe41dd10822f3907b937c856"
             ],
             "index": "pypi",
             "markers": "python_version >= '3.7'",
-            "version": "==8.0.3"
+            "version": "==8.0.4"
         },
         "pyyaml": {
             "hashes": [
