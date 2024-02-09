@@ -76,13 +76,14 @@ markdown_extensions:
 plugins:
   # Enables search
   - search
+  - git-authors
   # Enables export as PDF
   # - pdf-export
   # Allows to add a whole directory in the navigation instead of just files
   # Sub-nav items are automatically created if the provided dir contains subdirectories
   - include_dir_to_nav
   - monorepo
-  - git-authors
+
 # --8<-- [end:plugins]
 
 # --8<-- [start:repo]
