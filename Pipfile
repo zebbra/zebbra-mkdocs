@@ -5,7 +5,7 @@ name = "pypi"
 
 [packages]
 mkdocs = "*"
-mkdocs-material = "*"
+mkdocs-material = {git = "https://github.com/leandrolerena/mkdocs-material-insiders.git", ref = "master"}
 mkdocs-include-markdown-plugin = "*"
 pip = "*"
 install = "*"
