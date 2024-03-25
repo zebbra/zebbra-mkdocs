@@ -3,7 +3,7 @@ site_name: Zebbra Docs
 nav:
   - Start: index.md
   - MkDocs Configuration: mkdocs.md
-  - Dummy Project: '!include ./submodules/zebbra-mkdocs-dummyproject/mkdocs.yml'
+  - Test: project://zebbra-mkdocs-dummyproject
 
 # --8<-- [start:theme]
 theme:
@@ -81,8 +81,9 @@ plugins:
   # - pdf-export
   # Allows to add a whole directory in the navigation instead of just files
   # Sub-nav items are automatically created if the provided dir contains subdirectories
-  - include_dir_to_nav
-  - monorepo
+#  - include_dir_to_nav
+  - projects:
+      projects_dir: submodules
 
 # --8<-- [end:plugins]
 
