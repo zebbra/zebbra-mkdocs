@@ -77,6 +77,7 @@ plugins:
   # Enables search
   - search
   - git-authors
+  - git-revision-date-localized
   # Enables export as PDF
   # - pdf-export
   # Allows to add a whole directory in the navigation instead of just files
